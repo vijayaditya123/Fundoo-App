@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL="postgresql://username:Simran%401@localhost:5432/dbname"
+DATABASE_URL = "postgresql://postgres:Simran%401@localhost:5432/Fundoo_app"
+
 
 engine =create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(

@@ -1,5 +1,5 @@
 from sqlalchemy import Column,Integer,String,Boolean,DateTime
-from db.base import Base
+from src.db.base import Base
 from datetime import datetime  
 
 class User(Base):
@@ -12,7 +12,7 @@ class User(Base):
     is_active= Column(Boolean,default=True)
     created_at = Column(DateTime,default=datetime.utcnow)
     updated_at = Column(DateTime,default=datetime.utcnow)
-    
+
     
 
     
